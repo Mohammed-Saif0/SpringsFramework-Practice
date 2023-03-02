@@ -7,7 +7,6 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans
   https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<!-- Normal -->
 	<bean class="com.springcore.Student" name="student1">
 		<property name="studentId">
 			<value>8634</value>
@@ -20,14 +19,13 @@
 		</property>
 	</bean>
 	
-	<!--Using value as attribute of property-->
+	
 	<bean class="com.springcore.Student" name="student2">
 		<property name="studentId" value="1234" />
 		<property name="studentName" value="Some new student"/>
 		<property name="studentAddress" value="planet eartn"/>
 	</bean>
 	
-	<!--Using p schema-->
 	<bean class="com.springcore.Student" name="student3" p:studentId="3" p:studentName="student4" p:studentAddress="Mars"/>
 		
 	
