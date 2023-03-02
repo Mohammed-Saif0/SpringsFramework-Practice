@@ -1,0 +1,7 @@
+package com.springcore;
+
+public class Cars {
+	int carId;
+	String[] carColors;
+	int year;
+}

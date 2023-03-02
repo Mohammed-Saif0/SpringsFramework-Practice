@@ -1,0 +1,26 @@
+package com.springcore;
+
+public class Cars {
+	int carId;
+	String[] carColors;
+	int year;
+	public int getCarId() {
+		return carId;
+	}
+	public void setCarId(int carId) {
+		this.carId = carId;
+	}
+	public String[] getCarColors() {
+		return carColors;
+	}
+	public void setCarColors(String[] carColors) {
+		this.carColors = carColors;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+}
