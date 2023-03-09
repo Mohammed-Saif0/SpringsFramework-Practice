@@ -23,12 +23,7 @@ public class Student {
 		this.studentAddress = studentAddress;
 	}
 	
-	public Student(int studentId, String studentName, String studentAddress) {
-		super();
-		this.studentId = studentId;
-		this.studentName = studentName;
-		this.studentAddress = studentAddress;
-	}
+
 	
 	public Student() {
 		super();
