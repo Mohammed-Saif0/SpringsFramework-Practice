@@ -1,0 +1,19 @@
+package com.spring.autowiring;
+
+public class Emp {
+    private Address address;
+
+    public Emp(Address address){
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "address=" + address +
+              
+                '}';
+    }
+
+    
+}

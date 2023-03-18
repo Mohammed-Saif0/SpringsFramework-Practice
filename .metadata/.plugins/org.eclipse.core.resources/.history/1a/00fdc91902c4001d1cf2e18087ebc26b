@@ -1,0 +1,22 @@
+package com.spring.autowiring;
+
+public class Emp {
+    private Address address;
+    String name ;
+    int age ;
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "address=" + address +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    Emp(Address address, String name, int age){
+        this.address = address;
+        this.name = name;
+        this.age = age;
+    }
+}
