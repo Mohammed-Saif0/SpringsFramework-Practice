@@ -15,15 +15,14 @@
 	
 	<!-- Normal -->
 	<context:component-scan base-package="com.springcore.stereotype"/>
-	<util:list list-class="java.util.LinkedList" id="myList">
+	<util:list list-class="java.util.ArrayList" id="myList">
 		<value>100</value>
 		<value>2000</value>
 		<value>3000</value>
 		<value>40000</value>
 		<value>50000</value>
 	</util:list>
-	
-	<util:map map-class="java.util.HashMap" id="myMap">
+	<util:map map-class="java.util.TreeMap" id="myMap">
 		<entry key="Springs Framework" value="10000"/>
 		<entry key="Django Framework" value="5000" />
 	</util:map>

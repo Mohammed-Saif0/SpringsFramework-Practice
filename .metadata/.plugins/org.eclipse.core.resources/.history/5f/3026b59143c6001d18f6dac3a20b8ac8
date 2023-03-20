@@ -1,0 +1,17 @@
+package practice.springcore.lifeCycle;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+	public static void main(String[] args) throws Exception{
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("practice/springcore/lifeCycle/config.xml");
+		context.registerShutdownHook();
+		Person person1 = (Person) context.getBean("person1");
+		Person person2 = (Person) context.getBean("person1");
+		person2.setName("John Abraham");
+		System.out.println(person1);
+		
+	}
+}

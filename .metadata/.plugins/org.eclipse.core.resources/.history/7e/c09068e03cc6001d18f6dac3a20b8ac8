@@ -1,0 +1,5 @@
+package practice.springcore.lifeCycle;
+
+public class Person {
+
+}

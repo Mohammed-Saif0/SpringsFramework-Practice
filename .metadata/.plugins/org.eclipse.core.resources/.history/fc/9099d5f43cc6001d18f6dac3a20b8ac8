@@ -1,0 +1,11 @@
+package practice.springcore.lifeCycle;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Person {
+	private String name;
+	private int age;
+	@Autowired
+	private Address address;
+	
+}

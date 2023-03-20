@@ -1,0 +1,57 @@
+package practice.springcore.lifeCycle;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("person1")
+@Scope("prototype")
+public class Person implements InitializingBean,DisposableBean{
+	@Value("Mohammed Saif")
+	private String name;
+	@Value("21")
+	private int age;
+	@Autowired
+	@Qualifier("address")
+	private Address address;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", address=" + address + "]";
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+	public void init() {
+		System.out.println("Person object init started");
+	}
+	
+
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		init();
+	}
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Object destroyed");
+	}
+}

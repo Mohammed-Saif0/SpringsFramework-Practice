@@ -7,10 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/stereotype/config.xml");
 		Student student = context.getBean("obj",Student.class);
-		Student student1 = context.getBean("obj",Student.class);
-		System.out.println(student1.getAge());
-		student.setAge(22);
-		System.out.println(student.getAge());
-		System.out.println(student1.getAge());
+		System.out.println(student.getName());
 	}
 }
