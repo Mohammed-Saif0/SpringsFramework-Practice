@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\WorkSpace\eclipse"/>
+			<item value="D:\WorkSpace\SpringsClassConfiguration"/>
+			<item value="D:\WorkSpace\Java\Springs Class Configuration"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,12 +28,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.spring.jdbc"/>
+			<item value="com.springcore.SpringClassConfig"/>
+			<item value="com.springcore.SpringsClassConfiguration"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="groupId">
+			<item value="com.spring.jdbc"/>
 			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="springjdbc"/>
+			<item value="SpringClassConfig"/>
+			<item value="SpringsClassConfiguration"/>
 			<item value="springcore"/>
 		</list>
 		<list key="projectNameTemplate">
